@@ -10,9 +10,9 @@
     --peso-400: 400;
     --peso-600: 600;
     --peso-700: 700;
-    --color-principal: rgb(139, 110, 139);
-    --color-acento: #d59cd8;
-    --color-principal-alpha: rgba(139, 110, 139, 0.753);
+    --color-principal: #712cf9;
+    --color-acento: #ac88f5;
+    --color-principal-alpha: #702cf991;
 }
 
 p {
@@ -26,13 +26,6 @@ h4 {
     display: inline-block;
 }
 
-.coolui {
-    transition: ease-in-out 0.2s;
-    padding: 5px 10px;
-    color: #ffffff;
-    background-color: var(--color-principal);
-}
-
 #navbar {
     display: flex;
     flex-direction: row;
@@ -40,8 +33,8 @@ h4 {
     align-items: center;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    background-color: #d59cd8;
-    background-image: linear-gradient(90deg, #b089b3 0%, #8b6e8b 100%);
+    background-color: #712cf9;
+    background-image: var(--color-principal);
     color: #ffffff;
     height: var(--header-height);
 }
@@ -64,9 +57,8 @@ h4 {
 }
 
 #navbar a:hover {
-    color: #f4c3f7;
-    background-color: rgba(168, 79, 168, 0.404);
-    border-radius: 15px;
+    color: #712cf9;
+    background-color: #ffffff;
 }
 
 * {
@@ -82,14 +74,34 @@ html {
 body {
     background-color: #ffffff;
     color:#1d1d1d;
-    font-family: var(--body-font)
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
 }
+
+main {
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
     font-size: var(--tipografia-mas-grande);
 }
 .main-section {
-    width: 90%;
-    margin: 1rem auto;
+    width: 100%;
+    padding: 3.5rem 1rem;
+}
+
+.coolui {
+    width: 315px;
+    padding: 0 1rem;
+    height: 2.5rem;
+    color: #ffffff;
+    background-color: var(--color-principal);
+}
+
+h2 {
+    text-align: center;
 }
 
 ul {
@@ -120,10 +132,17 @@ span {
     text-align: start;
 }
 
-@media screen and (max-width: 874px) {
+@media screen and (max-width: 966px) {
+
+    p {
+        font-size: 18px;
+    }
+    .main-section{
+    padding: 3.5rem 1rem;
+    }
     #navbar {
         background-color: #d59cd8;
-        background-image: linear-gradient(180deg, #d59cd8 0%, #8b6e8b 100%);
+        background-image: linear-gradient(180deg, #4c0bce 0%, #712cf9 100%);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -135,6 +154,7 @@ span {
 
     .coolui {
         width: 100%;
+        text-align: center;
     }
 
     #navbar a {
