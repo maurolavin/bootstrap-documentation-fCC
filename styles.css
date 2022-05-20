@@ -29,12 +29,8 @@ h4 {
 .coolui {
     transition: ease-in-out 0.2s;
     padding: 5px 10px;
-}
-
-.coolui:hover {
-    color: #f4ecf5;
-    background-color: var(--color-principal-alpha);
-    border-radius: 25px;
+    color: #ffffff;
+    background-color: var(--color-principal);
 }
 
 #navbar {
@@ -59,16 +55,17 @@ h4 {
 #navbar a,
 #navbar a:visited,
 #navbar a:active {
-    font-size: var(--tipografia-pequena);
+    font-size: var(--tipografia-normal);
     text-decoration: none;
     color: #ffffff;
     transition: ease-in-out 0.2s;
     padding: 5px 10px;
+    font-weight: var(--peso-400);
 }
 
 #navbar a:hover {
-    color: var(--color-acento);
-    background-color: rgba(99, 82, 99, 0.404);
+    color: #f4c3f7;
+    background-color: rgba(168, 79, 168, 0.404);
     border-radius: 15px;
 }
 
@@ -134,6 +131,10 @@ span {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
         height: 100vh;
+    }
+
+    .coolui {
+        width: 100%;
     }
 
     #navbar a {
