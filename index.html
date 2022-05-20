@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Bootstrap Documentation</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header><h1>Bootstrap 5</h1></header>
+        <a class="nav-link" href="#Que_es_Bootstrap?">Que es Bootstrap?</a>
+        <a class="nav-link" href="#Como_Funciona_Bootstrap">Como Funciona Bootstrap</a>
+        <a class="nav-link" href="#Componentes_en_Bootstrap">Componentes en Bootstrap</a>
+        <a class="nav-link" href="#Mobile_First">Mobile First</a>
+        <a class="nav-link" href="#Menos_CSS">Menos CSS</a>
+        <a class="nav-link" href="#Clases">Clases</a>
+        <a class="nav-link" href="#Referencias">Referencias</a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Que_es_Bootstrap?">
+            <header><h2 class="coolui">Que es Bootstrap?</h2></header>
+            <p>Bootstrap es una biblioteca multiplataforma conjunto de herramientas de código abierto para diseño de sitios y aplicaciones web. Es uno de los frameworks Mobile First y Responsive mas populares del mundo. Es el segundo proyecto más destacado en GitHub1 y es usado por la NASA y la MSNBC, entre otras organizaciones</p>
+            <p>Contiene plantillas de diseño con tipografía, formularios, botones, cuadros, menús de navegación y otros elementos de diseño basado en HTML y CSS, así como extensiones de JavaScript adicionales.<br></p>
+        </section>
+        <section class="main-section" id="Como_Funciona_Bootstrap">
+            <header><h2 class="coolui">Cómo Funciona Bootstrap</h2></header>
+            <p>Bootstrap funciona con muchas clases y variables de CSS predefinidas. Éstas clases y variables preestablecidas abarcan el posicionamiento de elementos, tipografía, sistema de grilla/flexbox y propiedades como background-color entre otros.</p>
+            <p>Vamos a ver algunas de las variables predefinidas:</p>
+            <ul class="caracteristicas">
+                <li>Color</li>
+                <li>Tipografia</li>
+                <li>Bordes</li>
+            </ul>
+            <h4>Color</h4>
+            <div class="code_style">
+                <code class="code_color">
+                    <span>:root {                   </span>
+                    <span>--bs-blue: #0d6efd;       </span>
+                    <span>--bs-indigo: #6610f2;     </span>
+                    <span>--bs-purple: #6f42c1;     </span>
+                    <span>--bs-pink: #d63384;       </span>
+                    <span>--bs-red: #dc3545;        </span>
+                    <span>--bs-orange: #fd7e14;     </span>
+                    <span>--bs-yellow: #ffc107;     </span>
+                    <span>--bs-green: #198754;      </span>
+                    <span>--bs-teal: #20c997;       </span>
+                    <span>--bs-cyan: #0dcaf0;       </span>
+                    <span>--bs-black: #000;         </span>
+                    <span>--bs-white: #fff;         </span>
+                    <span>--bs-gray: #6c757d;       </span>
+                    <span>--bs-gray-dark: #343a40;  </span>
+                    <span>--bs-gray-100: #f8f9fa;   </span>
+                    <span>--bs-gray-200: #e9ecef;   </span>
+                    <span>--bs-gray-300: #dee2e6;   </span>
+                    <span>--bs-gray-400: #ced4da;   </span>
+                    <span>--bs-gray-500: #adb5bd;   </span>
+                    <span>--bs-gray-600: #6c757d;   </span>
+                    <span>--bs-gray-700: #495057;   </span>
+                    <span>--bs-gray-800: #343a40;   </span>
+                    <span>--bs-gray-900: #212529;   </span>
+                    <span>--bs-primary: #0d6efd;    </span>
+                    <span>--bs-secondary: #6c757d;  </span>
+                    <span>--bs-success: #198754;    </span>
+                    <span>--bs-info: #0dcaf0;       </span>
+                    <span>--bs-warning: #ffc107;    </span>
+                    <span>--bs-danger: #dc3545;     </span>
+                    <span>--bs-light: #f8f9fa;      </span>
+                    <span>--bs-dark: #212529;       </span>
+                    <span>}</span>
+                </code>
+            </div>
+                <p>Como podemos ver, Bootstrap tiene predefinidas variables de CSS/SASS para lograr una consistencia visual de mayor calidad, incluyendo una paleta de colores, colores para CTA, colores de advertencia, etc.</p>
+            <h4>Tipografia</h4>
+            <div class="code_style">
+                <code class="code_color">
+                    <span>$font-size-base: 1rem;</span>
+                    <span>$font-size-sm: $font-size-base * .875;</span>
+                    <span>$font-size-lg: $font-size-base * 1.25;</span>
+                    <br>
+                    <span>$font-weight-lighter: lighter;</span>
+                    <span>$font-weight-light: 300;</span>
+                    <span>$font-weight-normal: 400;</span>
+                    <span>$font-weight-bold: 700;</span>
+                    <span>$font-weight-bolder: bolder;</span>
+                    <br>
+                    <span>$h1-font-size: $font-size-base * 2.5</span>
+                    <span>$h2-font-size: $font-size-base * 2</span>
+                    <span>$h3-font-size: $font-size-base * 1.75</span>
+                    <span>$h4-font-size: $font-size-base * 1.5</span>
+                    <span>$h5-font-size: $font-size-base * 1.25;</span>
+                    <span>$h6-font-size: $font-size-base;</span>
+                    <span></span>
+                </code>
+            </div>
+                <p>Estas son algunas de las variables predefinidas para la tipografia/texto en Bootstrap.</p>
+            <h4>Bordes</h4>
+            <div class="code_style">
+                <code>
+                    <span>$border-width: 1px;</span>
+                    <span>$border-widths: (</span>
+                    <span>1: 1px,</span>
+                    <span>2: 2px</span>
+                    <span>3: 3px</span>
+                    <span>4: 4px</span>
+                    <span>5: 5px</span>
+                    <span>);</span><br>
+                    <span>$border-color: $gray-300;</span>
+                    <span>$border-radius: .25rem;</span>
+                    <span>$border-radius-sm: .2rem;</span>
+                    <span>$border-radius-lg: .3rem;</span>
+                    <span>$border-radius-pill: 50rem;</span>
+                </code>
+            </div>
+                <p>Estas son algunas de las variables para bordes en Bootstrap. Como podemos ver en la variable <strong><code>$Border-color</code></strong>, Bootstrap genera un sinfin de posiblidades en las que se pueden combinar variables en cualquier contexto</p>
+        </section>
+        <section class="main-section" id="Clases">
+            <header><h2 class="coolui">Clases</h2></header>
+        </section>
+        <section class="main-section" id="Componentes_en_Bootstrap">
+            <header><h2 class="coolui">Componentes en Bootstrap</h2></header>
+        </section>
+        <section class="main-section" id="Mobile_First">
+            <header><h2 class="coolui">Mobile First</h2></header>
+        </section>
+        <section class="main-section" id="Menos_CSS">
+            <header><h2 class="coolui">Menos CSS</h2></header>
+        </section>
+        <section class="main-section" id="Referencias">
+            <header><h2 class="coolui">Referencias</h2></header>
+            <p>Toda la informacion en este documento es extraida de la <a href="https://getbootstrap.com/" target="_blank">página oficial de Bootstrap</a> y <a href="https://es.wikipedia.org/wiki/Bootstrap_(framework)">Wikipedia</a></p>
+        </section>
+    </main>
+    
+</body>
+</html>
