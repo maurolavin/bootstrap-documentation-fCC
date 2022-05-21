@@ -11,32 +11,52 @@
     <title>Bootstrap Documentation</title>
 </head>
 <body>
-    <nav id="navbar">
-        <header><h1>Bootstrap 5</h1></header>
-        <a class="nav-link" href="#¿Qué_es_Bootstrap?">¿Qué es Bootstrap?</a>
-        <a class="nav-link" href="#¿Cómo_Funciona_Bootstrap?">¿Cómo Funciona Bootstrap?</a>
-        <a class="nav-link" href="#Componentes_en_Bootstrap">Componentes en Bootstrap</a>
-        <a class="nav-link" href="#Mobile_First">Mobile First</a>
-        <a class="nav-link" href="#Menos_CSS">Menos CSS</a>
-        <a class="nav-link" href="#Referencias">Referencias</a>
+    <div class="navbar_desktop">
+        <nav id="navbar">
+            <div class="navbar_division">
+                <header><h1>Bootstrap 5</h1></header>
+            </div>
+            <div class="navbar_division">
+                <a class="nav-link" href="#¿Qué_es_Bootstrap?">¿Qué es Bootstrap?</a>
+                <a class="nav-link" href="#¿Cómo_funciona_Bootstrap?">¿Cómo funciona Bootstrap?</a>
+                <a class="nav-link" href="#Componentes_en_Bootstrap">Componentes en Bootstrap</a>
+                <a class="nav-link" href="#Mobile_First">Mobile First</a>
+                <a class="nav-link" href="#Menos_CSS">Menos CSS</a>
+                <a class="nav-link" href="#Referencias">Referencias</a>
+            </div>
+    </div>
     </nav>
+    <div class="navbar_mobile">
+        <nav id="navbar">
+            <header><h1>Bootstrap 5</h1></header>
+            <a class="nav-link" href="#¿Qué_es_Bootstrap?">¿Qué es Bootstrap?</a>
+            <a class="nav-link" href="#¿Cómo_funciona_Bootstrap?">¿Cómo funciona Bootstrap?</a>
+            <a class="nav-link" href="#Componentes_en_Bootstrap">Componentes en Bootstrap</a>
+            <a class="nav-link" href="#Mobile_First">Mobile First</a>
+            <a class="nav-link" href="#Menos_CSS">Menos CSS</a>
+            <a class="nav-link" href="#Referencias">Referencias</a>
+        </nav>
+    </div>
     <main id="main-doc">
-        <section class="main-section" id="¿Qué_es_Bootstrap?">
+        <section class="main-section primersection" id="¿Qué_es_Bootstrap?">
             <header><h2 class="coolui">¿Qué es Bootstrap?</h2></header>
-            <p>Bootstrap es una biblioteca multiplataforma conjunto de herramientas de código abierto para diseño de sitios y aplicaciones web. Es uno de los frameworks Mobile First y Responsive mas populares del mundo. Es el segundo proyecto más destacado en GitHub1 y es usado por la NASA y la MSNBC, entre otras organizaciones<br>
+            <p>Bootstrap es una biblioteca multiplataforma conjunto de herramientas de código abierto para diseño de sitios y aplicaciones web. Es uno de los frameworks Mobile First y Responsive mas populares del mundo. Es el segundo proyecto más destacado en GitHub y es usado por la NASA y la MSNBC, entre otras organizaciones<br>
             Contiene plantillas de diseño con tipografía, formularios, botones, cuadros, menús de navegación y otros elementos de diseño basado en HTML y CSS, así como extensiones de JavaScript adicionales.</p>
         </section>
-        <section class="main-section" id="¿Cómo_Funciona_Bootstrap?">
+        <section class="main-section primersection" id="¿Cómo_funciona_Bootstrap?">
             <header><h2 class="coolui">¿Cómo Funciona Bootstrap?</h2></header>
             <p>Bootstrap funciona con muchas clases y variables de CSS predefinidas. Éstas clases y variables preestablecidas abarcan el posicionamiento de elementos, tipografía, sistema de grilla/flexbox y propiedades como background-color entre otros.</p>
             <p>Vamos a ver algunas de las variables predefinidas:</p>
-            <ul class="caracteristicas">
-                <li>Color</li>
-                <li>Tipografia</li>
-                <li>Bordes</li>
-                <li>Clases</li>
-            </ul>
+            <div class="ul_caracteristicas">
+                <ul class="caracteristicas">
+                    <li>Color</li>
+                    <li>Tipografia</li>
+                    <li>Bordes</li>
+                    <li>Clases</li>
+                </ul>
+            </div>
             <h4>Color</h4>
+            <p>Como podemos ver, Bootstrap tiene predefinidas variables de CSS/SASS para lograr una consistencia visual de mayor calidad, incluyendo una paleta de colores, colores para CTA, colores de advertencia, etc.</p>
             <div class="code_style">
                 <code class="code_color">
                     <span>:root {                   </span>
@@ -74,8 +94,8 @@
                     <span>}</span>
                 </code>
             </div>
-                <p>Como podemos ver, Bootstrap tiene predefinidas variables de CSS/SASS para lograr una consistencia visual de mayor calidad, incluyendo una paleta de colores, colores para CTA, colores de advertencia, etc.</p>
             <h4>Tipografia</h4>
+            <p>Estas son algunas de las variables predefinidas para la tipografía/texto en Bootstrap.</p>
             <div class="code_style">
                 <code class="code_color">
                     <span>$font-size-base: 1rem;</span>
@@ -97,8 +117,8 @@
                     <span></span>
                 </code>
             </div>
-                <p>Estas son algunas de las variables predefinidas para la tipografía/texto en Bootstrap.</p>
             <h4>Bordes</h4>
+            <p>Estas son algunas de las variables para bordes en Bootstrap. Como podemos ver en la variable <strong><code>$Border-color</code></strong>, Bootstrap genera un sinfin de posiblidades en las que se pueden combinar variables en cualquier contexto.</p>
             <div class="code_style">
                 <code>
                     <span>$border-width: 1px;</span>
@@ -116,22 +136,25 @@
                     <span>$border-radius-pill: 50rem;</span>
                 </code>
             </div>
-                <p>Estas son algunas de las variables para bordes en Bootstrap. Como podemos ver en la variable <strong><code>$Border-color</code></strong>, Bootstrap genera un sinfin de posiblidades en las que se pueden combinar variables en cualquier contexto</p>
+                
             <h4>Clases</h4>
-            <p>Otro punto fuerte en bootstrap son las clases que pueden ser aplicadas desde el mismo documento HTML. Podemos pensar estas clases como clases predefinidas en un documento SASS/CSS </p>
+            <p>Otro punto fuerte en bootstrap son las clases que pueden ser aplicadas desde el mismo documento HTML. Podemos pensar estas clases como código predefinido en un documento SASS/CSS que puede ser aplicado a una etiqueta HTML para centrar textos, aplicar un margen, aplicar un tipo de display, etc. Estos son algunos ejemplos de clases de Bootstrap y lo que modifican en nuestro código:</p>
         </section>
-        <section class="main-section" id="Componentes_en_Bootstrap">
+        <section class="main-section primersection" id="Componentes_en_Bootstrap">
             <header><h2 class="coolui">Componentes en Bootstrap</h2></header>
         </section>
-        <section class="main-section" id="Mobile_First">
+        <section class="main-section primersection" id="Mobile_First">
             <header><h2 class="coolui">Mobile First</h2></header>
         </section>
-        <section class="main-section" id="Menos_CSS">
+        <section class="main-section primersection" id="Menos_CSS">
             <header><h2 class="coolui">Menos CSS</h2></header>
+            <p>Como conclusión, Bootstrap es un framework que nos permite desarrollar sitios web con mayor precisión, a la vez de ofrecer un código limpio y organizado. La implementación de CSS/SASS y el uso de las clases predefinidas en Bootstrap, dan como consecuencia un código HTML algo vistoso, y casi nada de código CSS.
+                Esto es algo que trae muchísimos beneficios en cuanto al tiempo que nos toma desarrollar un sitio web, ya que Bootstrap permite una gran UI con un esfuerzo relativamente pequeño. Así como Bootstrap, hay otros frameworks basados en CSS que vale la pena estudiar, tales como Tailwind CSS o Bulma.
+            </p>
         </section>
-        <section class="main-section" id="Referencias">
+        <section class="main-section primersection" id="Referencias">
             <header><h2 class="coolui">Referencias</h2></header>
-            <p>Toda la informacion en este documento fue extraída de la <a href="https://getbootstrap.com/" target="_blank">página oficial de Bootstrap</a> y <a href="https://es.wikipedia.org/wiki/Bootstrap_(framework)">Wikipedia</a></p>
+            <p>Toda la informacion en este documento fue extraída de la <a href="https://getbootstrap.com/" target="_blank">página oficial de Bootstrap</a> y <a href="https://es.wikipedia.org/wiki/Bootstrap_(framework)" target="_blank">Wikipedia</a></p>
         </section>
     </main>
     
