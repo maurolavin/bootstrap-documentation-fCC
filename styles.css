@@ -5,7 +5,7 @@
     --body-font: 'Darker Grotesque', sans-serif;;
     --tipografia-mas-grande: 2rem;
     --tipografia-titulos: 1.75rem;
-    --tipografia-normal: 1.25rem;
+    --tipografia-normal: 1.5rem;
     --tipografia-pequena: 0.8rem;
     --peso-400: 400;
     --peso-600: 600;
@@ -148,6 +148,17 @@ span {
     text-align: start;
 }
 
+a {
+    list-style: none;
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+a:visited {
+    color: #1d1d1d;
+}
+
+
 @media screen and (max-width: 896px) {
 
     .navbar_desktop {
@@ -161,7 +172,7 @@ span {
     }
     
     p {
-        font-size: 24px;
+        font-size: 28px;
     }
 
     .main-section{
@@ -222,4 +233,33 @@ span {
     h2 {
         margin-top: 0;
     }
+}
+
+.component-examples{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.component-card{
+    height: 250px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.component-card img{
+    box-sizing: border-box;
+    object-fit: cover;
+    width: 100%;
+}
+
+.component-card:hover{
+    background-color: #712cf9aa;
+    color: #ffffff;
 }
